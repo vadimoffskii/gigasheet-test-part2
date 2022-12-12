@@ -1,0 +1,32 @@
+.form-group {
+  width: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    padding: 5px 10px;
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:focus:invalid {
+    border: 2px solid transparent;
+  }
+
+  button {
+    align-self: flex-end;
+  }
+}

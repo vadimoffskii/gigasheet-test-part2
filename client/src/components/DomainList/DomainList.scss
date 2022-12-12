@@ -1,0 +1,39 @@
+ul {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: black;
+    }
+  }
+
+  li:first-child {
+    font-weight: 600;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .highlight {
+    color: yellow;
+  }
+
+  .error {
+    color: red;
+    font-weight: 500;
+  }
+}
